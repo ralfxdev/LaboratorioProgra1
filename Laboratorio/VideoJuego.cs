@@ -38,7 +38,7 @@ namespace LaboratorioProgra1.Laboratorio
             {
                 //  La calificación debe estar entre 0 y 10
                 // Cambio de || por && para que la condición sea verdadera
-                if (value < 0 && value > 10)
+                if (value > 0 && value <= 10)
                 {
                     calificacion = value;
                 } else
@@ -68,7 +68,7 @@ namespace LaboratorioProgra1.Laboratorio
             }
         }
 
-        public void MostrarInformacion()
+        public virtual void MostrarInformacion()
         {
             Console.WriteLine("Título: " + Titulo);
             Console.WriteLine("Desarrolladora: " + Desarrolladora);
